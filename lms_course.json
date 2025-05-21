@@ -1,1 +1,115 @@
 
+{
+    "Courses": [{
+        "CourseID": "ObjectId",
+        "CourseName": "string",
+        "Credits": "int",
+        "CourseDescription": "string",
+        "CoursePrerequisites": "List<ObjectId>",
+        "CourseLevel": "string",
+        "CourseType": "string",
+        "CourseDuration": "int",
+        "CourseStartDate": "date",
+        "CourseEndDate": "date",
+        "CourseInstructor": "List<ObjectId>",
+        "CourseSubjects": "List<ObjectId>",
+        "CourseMaterials": "Object",
+        "CourseSchedule": "List<Object>",
+        "CourseExams": "List<ObjectId>",
+        "CourseProjects": "List<ObjectId>",
+        "CourseGames": "List<ObjectId>",
+        "CourseQuizzes": "List<ObjectId>",
+        "CourseAssignments": "List<ObjectId>",
+        "CourseResources": "List<Object>",
+        "CreatedAt": "date",
+        "UpdatedAt": "date"
+    }],
+
+    "Subjects": [{
+        "SubjectID": "ObjectId",
+        "SubjectName": "string",
+        "SubjectDescription": "string",
+        "SubjectCredits": "int",
+        "SubjectPrerequisites": "List<ObjectId>",
+        "SubjectLevel": "string",
+        "SubjectType": "string",
+        "SubjectModules": "List<ObjectId>",
+        "SubjectInstructor": "List<ObjectId>",
+        "SubjectSchedule": "List<Object>",
+        "SubjectMaterials": "Object",
+        "SubjectStartDate": "date",
+        "SubjectEndDate": "date",
+        "SubjectDuration": "int",
+        "SubjectResources": "List<Object>",
+        "SubjectAssignments": "List<ObjectId>",
+        "SubjectExams": "List<ObjectId>",
+        "SubjectProjects": "List<ObjectId>",
+        "SubjectGames": "List<ObjectId>",
+        "SubjectQuizzes": "List<ObjectId>",
+        "CreatedAt": "date",
+        "UpdatedAt": "date"
+    }],
+
+    "Modules": [{
+        "ModuleID": "ObjectId",
+        "ModuleName": "string",
+        "SubjectID": "ObjectId",
+        "ModuleDescription": "string",
+        "ModuleTopics": "List<ObjectId>",
+        "ModuleCredits": "int",
+        "ModulePrerequisites": "List<ObjectId>",
+        "CreatedAt": "date",
+        "UpdatedAt": "date"
+    }],
+
+    "Topics": [{
+        "TopicID": "ObjectId",
+        "TopicName": "string",
+        "ModuleID": "ObjectId",
+        "TopicAssignments": "List<ObjectId>",
+        "TopicGames": "List<ObjectId>",
+        "TopicVideos": "List<String>",
+        "TopicContent": "String",
+        "CreatedAt": "date",
+        "UpdatedAt": "date"
+    }],
+
+    "Questions": [{
+        "QuestionID": "ObjectId",
+        "TopicIDs": "List<ObjectId>",
+        "ModuleIDs": "List<ObjectId>",
+        "SubjectIDs": "List<ObjectId>",
+        "QuestionText": "String",
+        "Options": "List<Object>",
+        "CorrectAnswer": "Object",
+        "Difficulty": "String",
+        "CreatedAt": "date",
+        "UpdatedAt": "date"
+    }],
+
+    "Assignments": [{
+        "AssignmentID": "ObjectId",
+        "Title": "String",
+        "Description": "String",
+        "TopicIDs": "List<ObjectId>",
+        "ModuleIDs": "List<ObjectId>",
+        "DueDate": "date",
+        "TotalPoints": "int",
+        "Instructions": "String",
+        "Resources": "List<Object>",
+        "CreatedAt": "date",
+        "UpdatedAt": "date"
+    }],
+
+    "Games": [{
+        "GameID": "ObjectId",
+        "GameName": "String",
+        "GameType": "String",
+        "TopicIDs": "List<ObjectId>",
+        "Instructions": "String",
+        "GameContent": "Object",
+        "GameDifficulty": "String",
+        "CreatedAt": "date",
+        "UpdatedAt": "date"
+    }]
+}
